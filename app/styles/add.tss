@@ -1,0 +1,53 @@
+"#addWin":{
+	layout: 'vertical',
+	navBarHidden: true,
+	barColor: '#a00'
+}
+
+"#body": {
+	layout: "absolute",
+	//backgroundColor: "yellow"
+}
+
+"#address":{
+	top: '25dp',
+	width: '90%',
+	height: Ti.UI.SIZE,
+	bottom: '0dp',
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	returnKeyType: Ti.UI.RETURNKEY_DONE
+}
+
+"#addressCompletion": {
+    top: '68dp',
+	width: '90%',
+	height: 50,
+	borderWidth: 1,
+    borderColor: "#cccccc",
+   	backgroundColor: "#ffffff",
+    separatorColor: "#cccccc",
+    separatorStyle: Ti.UI.iPhone.TableViewSeparatorStyle.SINGLE_LINE,
+    backgroundColor: "yellow"
+}
+
+"#suggestion": {
+	left: '10dp',
+  	//right: '10dp',
+  	height: Ti.UI.SIZE,
+  	font: {
+		fontSize: '18dp'
+	}
+}
+
+"#message":{
+	top: '100dp',
+	width: '90%',
+	height: '100dp',
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	returnKeyType: Ti.UI.RETURNKEY_DONE
+}
+
+"#sendButton":{
+	width: '90%',
+	top: '200dp'
+}

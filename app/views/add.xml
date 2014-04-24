@@ -1,0 +1,32 @@
+<Alloy>
+	<Window id="addWin" class="container" modal="true" onOpen="focusMessage">
+		<!-- header -->
+	    <View id="header">
+	      <Label id="title">MysteryChat</Label>
+	    </View>
+
+		<View id="body" layout="composite">
+	  		<TextField id="address" hintText="Who is it for?" onFocus="onAddressFocus" onBlur="onAddressBlur"/>
+
+	  		<TextArea id="message" hintText="What's the message" onReturn="closeKeyboard"/>	  		
+		  	<Button id="sendButton" class="button" onClick="addItem">Send</Button>
+
+			<!-- Needs to float on top -->
+  		    <TableView id="addressCompletion" visible="false">
+		      <TableViewRow>
+		      	<Label id="suggestion" text="XXXX"/>
+		      </TableViewRow>
+		    </TableView>
+	  	</View>
+<!--
+		<TableView>
+			<TableViewRow id="message">
+	  			<TextField id="itemField" hintText="What's the message" onReturn="closeKeyboard"/>
+			</TableViewRow>
+			<TableViewRow id="button">
+		  		<Button class="button" onClick="addItem">Send</Button>
+		  	</TableViewRow>
+	  	</TableView>
+ -->  		
+	</Window>
+</Alloy>
